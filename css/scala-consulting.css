@@ -1,0 +1,16 @@
+.jumbotron {
+	background-color: #72D0EB;
+	color: #174753;
+}
+
+.col-lg-6 {
+	background-color: rgba(226, 233, 239, 0.4);
+	color: #586E75;
+}
+
+a {
+	color: rgb(23, 71, 83);
+	font-weight: bold;
+	font-family: proxima-nova, sans-serif;
+	text-decoration: none solid rgb(23, 71, 83);
+}
