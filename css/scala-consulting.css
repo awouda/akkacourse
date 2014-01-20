@@ -2,6 +2,28 @@ body {
 	background-color: #174753;
 }
 
+.sticker {
+	position: fixed;
+	top: 90px;
+	right: 155px;
+	font-size: 18px;
+	color: #ee6768;
+	width: 183px;
+	text-align: center;
+	background-color: #eee;
+	border-radius: 70px;
+	border: solid;
+	border-color: #ee6768;
+	padding: 12px;
+	-webkit-transform: rotate(12.5deg);
+	-moz-transform: rotate(12.5deg);
+	-ms-transform: rotate(12.5deg);
+	-o-transform: rotate(12.5deg);
+	transform: rotate(12.5deg);
+	opacity: 0.9;
+	z-index: 10;
+}
+
 .header h3, .footer {
 	color: #ee6768;
 }
@@ -21,6 +43,20 @@ body {
 .col-lg-6 {
 	background-color: #ddd;
 	color: #586E75;
+
+	border: solid;
+	border-color: white;
+	border-width: 6px;
+
+	height: 640px;
+}
+
+.col-lg-6.left {
+	border-radius: 6px 0px 0px 6px;
+}
+
+.col-lg-6.right {
+	border-radius: 0px 6px 6px 0px;
 }
 
 .col-lg-6 h4 {
