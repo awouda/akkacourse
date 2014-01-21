@@ -14,8 +14,12 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Angular - Carousel -->
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-tpls-0.10.0.js"></script>
+    <!-- For dev use local
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js"></script>
     <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+    -->
     <!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
     <script src="js/app.js"></script>
 
@@ -31,7 +35,7 @@
   </head>
 
   <body>
-    <div class="sticker">Voor het eerst op Nederlandse bodem.</div>
+    <!-- <div class="sticker">Voor het eerst op Nederlandse bodem.</div> -->
 
     <div class="container">
       <div class="header">
@@ -43,21 +47,44 @@
         <h3 class="text-muted">Scala-Consultancy.nl</h3>
       </div>
 
-      <div class="jumbotron">
-        <carousel interval="5000">
-          <slide>
-            <h1>Akka cursus in Nederland</h1>
-            <p class="lead">Wij als Nederlandse Scala consultants zijn trots om de Akka cursussen in Nederland te organiseren, gegeven door Heiko Seeberger van Typesafe.</p>
-            Schrijf je NU in voor deze UNIEKE mogelijkheid !
-            <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Schrijf je NU in</a></p>
-          </slide>
-          <slide>
-            Manual slide 2
-          </slide>
-          <slide>
-            Manual slide 3
-          </slide>
-        </carousel>
+      <div>
+      <carousel interval="50000">
+        <slide>
+            <div class="jumbotron">
+          <h1>Akka cursus in Nederland</h1>
+          <p class="lead">Van <strong>8 t/m 11 april 2014</strong> geeft komt <strong>Heiko Seeberger van Typesafe</strong> naar Nederland voor het geven van zowel de <a href="#cursus">Basis Akka</a> als <a href="#cursus">Advance Akka</a> cursussen.</p>
+          <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Schrijf je NU in</a></p>
+            </div>
+        </slide>
+        <slide>
+            <div class="jumbotron">
+          <h1 style="font-size: 56px;">Basis cursus Akka met Scala</h1>
+          <p class="lead">Leer alles over het bouwen een gedistribueerde en concurrent systeem op basis van actoren.</p>
+          <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Schrijf je NU in</a></p>
+            </div>
+        </slide>
+        <slide>
+            <div class="jumbotron">
+          <h1 style="font-size: 56px;">Advanced Akka met Scala</h1>
+          <p class="lead">Leer hoe een Akka applicatie gedistribueerd kan worden over een cluster.</p>
+          <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Schrijf je NU in</a></p>
+            </div>
+        </slide>
+        <slide>
+            <div class="jumbotron">
+          <h1>Early Bird korting</h1>
+          <p class="lead">Schrijf je in voor 15 februari en krijg &euro;200,- korting op een cursus.<br/> Of betaal slecht &euro;1900,- voor beide cursussen.
+          <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Schrijf je NU in</a></p>
+            </div>
+        </slide>
+        <slide>
+            <div class="jumbotron">
+          <h1>Locatie sponsor gezocht</h1>
+          <p class="lead">We zoeken nog een locatie in Amsterdam of Utrecht waar deze cursus gehouden kan worden. Weet je een locatie, laat het ons weten.
+          <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Ik weet een locatie</a></p>
+            </div>
+        </slide>
+      </carousel>
       </div>
 
 <!--       <div class="jumbotron">
@@ -67,9 +94,18 @@
         <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Schrijf je NU in</a></p>
       </div>
  -->
+      <div class="row marketing">
+        <div class="col-lg-12 content">
+        Wij, Nederlandse freelance Scala consultants, zijn blij en trots dat wij de eerste TypeSafe Akka cursus in Nederland kunnen organiseren. Nadat wij 2 jaar geleden in Lausanne waren voor een Scala cursus en vorige jaar in Zurich voor de Basis Akka cursus, vonden wij dat Heiko nu wel eens naar ons mocht komen. En dat is gelukt.<br/>
+        <br/>
+        Op <strong>10 en 11 april 2014</strong> organiseren wij de Advanced Akka met Scala cursus. En, om deze cursus voor meerdere developers toegangkelijk te maken, is het mogelijk om vooraf, op <strong>8 en 9 april</strong>, de basis cursus Akka te volgen.<br/>
+        <br/>
+        <strong><a href="">Schrijf je NU in</a></strong> voor deze unieke mogelijkheid om deze cursus in Nederland te volgen!
+        </div>
+      </div>
 
       <div class="row marketing">
-        <div class="col-lg-6 left">
+        <div class="col-lg-6 left content">
           <h4>Basis cursus Akka met Scala</h4>
           <p>De <a href="http://typesafe.com/how/training/fasttracktoakkawithscala">introductie cursus Akka </a>voor ervaren applicatie ontwikkelaars met Scala ervaring als voorkennis. In de cursus leer je wat actors zijn, en hoe je hiermee een applicatie kan bouwen gebasseerd op actor-systemen draaiend op 1 JVM.
           </p>
@@ -91,9 +127,11 @@
           <p><span>Locatie:</span> Nog te bepalen (in Amsterdam of Utrecht)</p>
 	        <p><span>Prijs:</span> &euro;1200,- ex BTW.</p>
           <p><span>Vereiste voorkennis:</span> Je moet bekend zijn met de basis Scala syntax. Kennis van   distributed en concurrent systemen is een pre, maar niet vereist.</p>
+          <p><span>Aantal cursisten nog nodig:</span> 5 !
         </div>
 
-        <div class="col-lg-6 right">
+        <a name="cursus"/>
+        <div class="col-lg-6 right content">
           <h4>Advanced Akka met Scala</h4>
           <p>In deze <a href="http://typesafe.com/how/training/advancedakkawithscala" >vervolg cursus</a> cursus wordt uitgebreid behandeld hoe je een Akka applicaite kan opschalen draaiend op meerdere machines en gebruik makend van 3rd party systemen.</p>
           <p><span>Na deze cursus gevolgd te hebben, ben je in staat om:</span><ul>
@@ -113,6 +151,20 @@
          <p><span>Locatie:</span> Nog te bepalen (in Amsterdam of Utrecht)</p>
          <p><span>Prijs:</span> &euro;1200,- ex BTW.</p>
          <p><span>Vereiste voorkennis:</span> Voor deze cursus wordt verwacht dat je bekend bent met Akka waaronder het maken van Actors, testen van een Actor systeem, supervisie en error afhandeling. De Basis Akka cursus is de perfecte voorbereiding hiervoor.</p>
+         <p><span>Aantal cursisten nog nodig:</span> 2 !
+        </div>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12 content">
+        <p>
+        De inschrijving wordt pas bevestigd na het ontvangen van het cursusgeld.<br/>
+        Deze bevestiging dien je mee te nemen naar de cursus.<br/>
+        </p>
+        <p>
+        De voornaamste reden waarom wij dit organiseren is omdat wij zelf graag de cursus in Nederland willen doen. Wij hebben geen winstdoelstelling. De prijs is zo bepaald zodat bij een minimaal aantal deelnemers de cursus doorgang kan vinden. Mochten er veel aanmeldingen zijn, zullen wij de prijs aanpassen en wordt het teveel betaalde teruggestort.<br/>
+        Bij de cursus staat vermeld hoeveel cursisten er nog nodig zijn om de cursus door te kunnen laten gaan.
+        </p>
         </div>
       </div>
 

@@ -2,10 +2,18 @@ body {
 	background-color: #174753;
 }
 
+.carousel {
+	height: 377px;
+}
+
+.carousel-control {
+	width: 60px;
+}
+
 .sticker {
-	position: fixed;
-	top: 90px;
-	right: 155px;
+	position: relative;
+	top: 160px;
+	right: 1000px;
 	font-size: 18px;
 	color: #ee6768;
 	width: 183px;
@@ -31,6 +39,12 @@ body {
 .jumbotron {
 	background-color: #72D0EB;
 	color: #174753;
+	height: 377px;
+}
+
+.jumbotron a {
+	color: #ee6768;
+	font-weight: 500;
 }
 
 .jumbotron .btn {
@@ -38,17 +52,37 @@ body {
 	font-weight: 700;
 	font-family: 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', sans-serif;
 	border: none;
+	color: white;
+}
+
+.content {
+	background-color: #ddd;
+	color: #586E75;
+}
+
+.content h4 {
+	color: #174753;
+	font-weight: 700;
+}
+
+.content a {
+	color: #ee6768;
+}
+
+.content strong {
+	color: #174753;
+}
+
+.content p span {
+	color: #174753;
+	font-weight: 700;
 }
 
 .col-lg-6 {
-	background-color: #ddd;
-	color: #586E75;
-
+	height: 670px;
 	border: solid;
 	border-color: white;
 	border-width: 6px;
-
-	height: 640px;
 }
 
 .col-lg-6.left {
@@ -59,18 +93,13 @@ body {
 	border-radius: 0px 6px 6px 0px;
 }
 
-.col-lg-6 h4 {
-	color: #174753;
-	font-weight: 700;
-}
-
-.col-lg-6 a {
-	color: #ee6768;
-}
-
-.col-lg-6 p span {
-	color: #174753;
-	font-weight: 700;
+.col-lg-12 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: solid;
+	border-color: white;
+	border-width: 6px;
+	border-radius: 6px;
 }
 
 @media (min-width: 900px) {
