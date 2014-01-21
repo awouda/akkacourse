@@ -10,28 +10,6 @@ body {
 	width: 60px;
 }
 
-.sticker {
-	position: relative;
-	top: 160px;
-	right: 1000px;
-	font-size: 18px;
-	color: #ee6768;
-	width: 183px;
-	text-align: center;
-	background-color: #eee;
-	border-radius: 70px;
-	border: solid;
-	border-color: #ee6768;
-	padding: 12px;
-	-webkit-transform: rotate(12.5deg);
-	-moz-transform: rotate(12.5deg);
-	-ms-transform: rotate(12.5deg);
-	-o-transform: rotate(12.5deg);
-	transform: rotate(12.5deg);
-	opacity: 0.9;
-	z-index: 10;
-}
-
 .header h3, .footer {
 	color: #ee6768;
 }
@@ -79,7 +57,7 @@ body {
 }
 
 .col-lg-6 {
-	height: 670px;
+	/*height: 670px;*/
 	border: solid;
 	border-color: white;
 	border-width: 6px;
