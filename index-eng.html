@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="scalaconsultants">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +8,26 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Akka courses Netherlands</title>
+    <title>Akka course in The Netherlands</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
+    <!-- Angular - Carousel -->
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-tpls-0.10.0.js"></script>
+    <!-- For dev use local
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+    -->
+    <!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
+    <script src="js/app.js"></script>
+
     <!-- Custom styles for this template -->
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
-    <link href="css/scala-consulting2.css" rel="stylesheet">
+    <link href="css/scala-consulting.css" rel="stylesheet">
 
- <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -25,49 +35,150 @@
   </head>
 
   <body>
+    <!-- <div class="sticker">Voor het eerst op Nederlandse bodem.</div> -->
 
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li><a href="index.html">nl</a></li>
-          <li class="active"><a href="index-eng.html">eng</a></li>
-          <li><a href="#">contact</a></li>
+          <li class="active"><a href="index-eng.html">en</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
-        <h3 class="text-muted">Scala-consultancy</h3>
+        <h3 class="text-muted">Scala-Consultancy.nl</h3>
       </div>
 
-      <div class="jumbotron">
-        <h1>Akka courses</h1>
-        <p class="lead">Heiko Seeberger from Typesafe giving fast track to Akka and Advanced Akka courses in the Netherlands from 9th till 11th of April</p>
-        <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Registering for Akka course" role="button">Register now</a></p>
+      <div>
+      <carousel interval="5000">
+        <slide>
+            <div class="jumbotron">
+          <h3>Akka course in The Netherlands</h3>
+          <p class="lead">From <strong>8 till 11 april 2014</strong> <strong>Heiko Seeberger</strong> of Typesafe</strong> is coming to The Netherlands to present both the <a href="#basis">Fast Track to Akka with Scala</a> and the <a href="#advanced">Advanced Akka with Scala</a> courses.</p>
+          <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Subscribe NOW</a></p>
+            </div>
+        </slide>
+        <slide>
+            <div class="jumbotron">
+          <h3>Fast Track to Akka with Scala</h3>
+          <p class="lead">Learn all about building a distributed and concurrent system using actors.</p>
+          <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Subscribe NOW</a></p>
+            </div>
+        </slide>
+        <slide>
+            <div class="jumbotron">
+          <h1 style="font-size: 56px;">Advanced Akka with Scala</h1>
+          <p class="lead">Learn about how to distribute an Akka application in a cluster.</p>
+          <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Subscribe NOW</a></p>
+            </div>
+        </slide>
+        <slide>
+            <div class="jumbotron">
+          <h1>Early Bird discount</h1>
+          <p class="lead">Subscribe before februari 15th and get a &euro;200,- discount on any course.<br/>
+          Or pay only &euro;1900,- for both courses.
+          <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Subscribe NOW</a></p>
+            </div>
+        </slide>
+        <slide>
+            <div class="jumbotron">
+          <h1>Wanted: location sponsor</h1>
+          <p class="lead">We are looking for a good location in Amsterdam or Utrecht where this course can be held. Do you know a location, let us know.
+          <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">I know a location</a></p>
+            </div>
+        </slide>
+      </carousel>
+      </div>
+
+<!--       <div class="jumbotron">
+        <h1>Akka cursus in Nederland</h1>
+        <p class="lead">Wij als Nederlandse Scala consultants zijn trots om de Akka cursussen in Nederland te organiseren, gegeven door Heiko Seeberger van Typesafe.</p>
+        Schrijf je NU in voor deze UNIEKE mogelijkheid !
+        <p><a class="btn btn-lg btn-success" href="mailto:info@scalaconsultancy.nl?subject=Aanmelding Akka cursus" role="button">Schrijf je NU in</a></p>
+      </div>
+ -->
+      <div class="row marketing">
+        <div class="col-lg-12 content">
+        We, some freelance Dutch Scala consultants, are proud and pleased that we may offer the first Typesafe Akka courses in The Netherlands. Two years ago we went to Lausanna for the Scala courses. Last year we went to Zürich for the Fast Track to Akka course. This year we thought is was time for Heiko to come to us. ;-)<br/>
+        <br/>
+        On <strong>april 10 and 11 2014</strong> we organize the <a href="#advanced">Advanced Akka with Scala</a> course. And, to make this course available to more developers, it is possible to attend the <a href="#basis">Fast Track to Akka with Scala</a> course on <strong>april 8th and 9th</strong>.<br/>
+        <br/>
+        <strong><a href="">Subscribe NOW</a></strong> for this unique oportunity to attend these courses in The Netherlands !
+        </div>
+      </div>
+
+      <a name="basis"/>
+      <div class="row marketing">
+        <div class="col-lg-6 left content">
+          <h4>Fast Track to Akka with Scala</h4>
+          <p>De <a href="http://typesafe.com/how/training/fasttracktoakkawithscala">introductie cursus Akka </a>voor ervaren applicatie ontwikkelaars. In de cursus leer je wat actors zijn, en hoe je hiermee een applicatie kan bouwen gebasseerd op actor-systemen draaiend op 1 JVM.
+          </p>
+          <p>
+          Dit is een opdracht intensieve cursus. Je bouwt aan een Akka applicatie die gedurende de cursus uitgebreid wordt met nieuwe features die in de cursus behandeld worden.
+          </p>
+          <p><span>Na deze cursus gevolgd te hebben, ben je in staat om:</span><ul>
+            <li>Schaalbare en fout tolerante applicaties te ontwerpen en bouwen met Akka's actoren.
+            <li>Akka applicaties te configureren, testen en tunen.
+            <li>Best practices toe te passen voor het ontwerpen van asynchrone, event-driven applicaties met Akka.
+            <li>met vertrouwen Akka in productie systemen toe te passen.
+          </ul></p>
+          <p><span>Cursus onderwerpen:</span><ul>
+            <li>Intro
+            <li>Actor basis
+            <li>Testen van actoren
+            <li>Actor lifecycle
+            <li>Fout tolerantie
+            <li>Opschalen met routers
+          </ul></p>
+         <p><span>Date:</span>april 8 and 9 2014.</p>
+         <p><span>Location:</span> To be determined (either in Amsterdam or Utrecht)</p>
+         <p><span>Price:</span> &euro;1200,- ex BTW.</p>
+          <p><span>Prerequisits:</span> Je moet bekend zijn met de basis Scala syntax. Kennis van   distributed en concurrent systemen is een pre, maar niet vereist.</p>
+          <p><span>Aantal cursisten nog nodig:</span> 5 !
+        </div>
+
+        <a name="advanced"/>
+        <div class="col-lg-6 right content">
+          <h4>Advanced Akka with Scala</h4>
+          <p>In deze <a href="http://typesafe.com/how/training/advancedakkawithscala" >vervolg cursus</a> cursus wordt uitgebreid behandeld hoe je een Akka applicaite kan opschalen draaiend op meerdere machines en gebruik makend van 3rd party systemen.</p>
+          <p><span>Na deze cursus gevolgd te hebben, ben je in staat om:</span><ul>
+          <li>Akka's remoting en clustering features to begrijpen.
+          <li>3e partij systemen te integreren.
+          <li>een RESTful HTTP laag te maken.
+          <li>met vertrouwen Akka op grote schaal te gebruiken.
+          </ul></p>
+          <p><span>Cursus onderwerpen:</span><ul>
+            <li>Akka basis reloaded
+            <li>Remoting
+            <li>Clustering
+            <li>Integratie met 3e partij systemen.
+            <li>Beschikbaar maken van een RESTful HTTP interface
+          </ul></p>
+         <p><span>Date:</span>april 10 and 11 2014.</p>
+         <p><span>Location:</span> To be determined (either in Amsterdam or Utrecht)</p>
+         <p><span>Price:</span> &euro;1200,- ex BTW.</p>
+         <p><span>Prerequisits:</span> Voor deze cursus wordt verwacht dat je bekend bent met Akka waaronder het maken van Actors, testen van een Actor systeem, supervisie en error afhandeling. De Basis Akka cursus is de perfecte voorbereiding hiervoor.</p>
+         <p><span>Aantal cursisten nog nodig:</span> 2 !
+        </div>
       </div>
 
       <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi <a href="#">een link</a> gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        <div class="col-lg-12 content">
+        <p>
+        You receive a confirmation of the subscription after the course fee has been received.<br/>
+        You must bring the confirmation to the course.<br/>
+        </p>
+        <p>
+        A minimum number of attendees is required for the course to proceed. The minimum number of additional attendees needed is mentioned for each course.
+        </p>
+        <!--
+        <p>
+        De voornaamste reden waarom wij dit organiseren is omdat wij zelf graag de cursus in Nederland willen doen. Wij hebben geen winstdoelstelling. De prijs is zo bepaald zodat bij een minimaal aantal deelnemers de cursus doorgang kan vinden. Mochten er veel aanmeldingen zijn, zullen wij de prijs aanpassen en wordt het teveel betaalde teruggestort.
+        </p>
+        -->
         </div>
       </div>
 
       <div class="footer">
-        <p>&copy; Scala-consultancy 2013</p>
+        <p>&copy; Scala-Consultancy.nl 2014</p>
       </div>
 
     </div> <!-- /container -->
