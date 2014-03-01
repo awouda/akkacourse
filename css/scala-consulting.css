@@ -91,6 +91,17 @@ body {
 	font-weight: 700;	
 }
 
+.location-text {
+	display: table-cell;
+	vertical-align: top;
+}
+.location-text h4 {
+	margin-top: 0px;
+}
+.location-image {
+	display: none;
+}
+
 @media (min-width: 1200px) {
   .courses {
 	display: table;
@@ -111,6 +122,10 @@ body {
 @media (min-width: 900px) {
   .container {
     max-width: 900px;
+  }
+  .location-image {
+	display: table-cell;
+	padding-left: 15px;
   }
 }
 
